@@ -50,11 +50,11 @@ def mainMenu():
 
 
 def addEmployee():
-    userFirstName = input("What is the first name")
-    userLastName = input("What is the last name")
-    raw_userSalary = input("What is the salary")
+    userFirstName = input("What is the first name"+"\n").capitalize()
+    userLastName = input("What is the last name"+"\n").capitalize()
+    raw_userSalary = input("What is the salary"+"\n")
     userSalary = int(raw_userSalary)
-    raw_userZipcode = input("What is the Zipcode")
+    raw_userZipcode = input("What is the Zipcode"+"\n")
     userZipcode = int(raw_userZipcode)
 
     header = ['firstname', 'lastname', 'salary', 'zipcode']
@@ -281,7 +281,7 @@ def deleteRow():
     updatedlist = []
     with open("payroll.csv", newline="") as f:
         reader = csv.reader(f)
-        firstname = input("Enter the firstname of the user you wish to remove from file:")
+        firstname = input("Enter the firstname of the user you wish to remove from file:"+"\n").capitalize()
 
         for row in reader:  # for every row in the file
 
