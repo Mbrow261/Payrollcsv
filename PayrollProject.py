@@ -20,7 +20,7 @@ def mainMenu():
     print("9: Exit")
 
     while True:
-        userChoice = input("Choose an option:")
+        userChoice = input("Choose an option:"+"\n")
         if userChoice == '1':
             readpayroll()
             break
